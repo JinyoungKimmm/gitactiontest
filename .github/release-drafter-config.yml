@@ -27,7 +27,7 @@ autolabeler:
       - "/release\/\d+\.\d+$/"
   - label: "patch"
     branch:
-      - "/release\/\d+\.\d+\.\d+$/"
+      - '/release\/\d+\.\d+\.\d+$/'
 template: |
   ## Changes
 
