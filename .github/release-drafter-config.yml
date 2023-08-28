@@ -3,10 +3,10 @@ tag-template: "v$RESOLVED_VERSION"
 categories:
   - title: "💎 Features"
     labels:
-      - "feature"
+      - "minor"
   - title: "🐜 Bug Fixes"
     labels:
-      - "fix"
+      - "patch"
 change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 version-template: "$MAJOR.$MINOR.$PATCH"
@@ -21,6 +21,13 @@ version-resolver:
     labels:
       - "patch"
   default: patch
+autolabeler:
+  - label: 'minor'
+    branch:
+      - '/release\/\d+\.\d+$/'
+  - label: 'patch'
+    branch:
+      - '/release\/\d+\.\d+\.\d+$/'
 template: |
   ## Changes
 
