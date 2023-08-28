@@ -22,12 +22,12 @@ version-resolver:
       - "patch"
   default: patch
 autolabeler:
-  - label: 'minor'
+  - label: "minor"
     branch:
-      - '/release\/\d+\.\d+$/'
-  - label: 'patch'
+      - "/release\/\d+\.\d+$/"
+  - label: "patch"
     branch:
-      - '/release\/\d+\.\d+\.\d+$/'
+      - "/release\/\d+\.\d+\.\d+$/"
 template: |
   ## Changes
 
