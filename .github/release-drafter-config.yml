@@ -25,3 +25,10 @@ template: |
   ## Changes
 
   $CHANGES
+autolabeler:
+  - label: "minor"
+    branch:
+      - "/release\/\d+\.\d+$/"
+  - label: "patch"
+    branch:
+      - "/release\/\d+\.\d+\.\d+$/"
